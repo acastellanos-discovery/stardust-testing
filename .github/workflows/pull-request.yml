@@ -29,7 +29,8 @@ jobs:
   unit-testing:
     name: Unit Testing
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: echo TODO Unit testing...
+      - name: Run testing
+        run: npm test
