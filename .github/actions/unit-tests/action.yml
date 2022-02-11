@@ -3,5 +3,6 @@ description: "Use npm to run unit tests"
 
 runs:
   steps:
-    - id: unit-tests
-      run: echo "TODO Unit Tests"
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
