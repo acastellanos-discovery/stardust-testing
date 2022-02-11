@@ -4,5 +4,6 @@ description: "Use npm to run unit tests"
 runs:
   steps:
     - uses: actions/checkout@v1
+      shell: bash
     - name: Run a one-line script
       run: echo Hello, world!
