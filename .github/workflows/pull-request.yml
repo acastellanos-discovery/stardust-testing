@@ -20,6 +20,10 @@ jobs:
     name: Unit Testing
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: echo TODO Unit testing...
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - run: npm install
+      - name: Run testing
+        run: npm test
