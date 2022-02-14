@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const add = require("./index");
 
 test("adds 2 + 3 to equal 5", () => {
