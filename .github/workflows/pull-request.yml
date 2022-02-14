@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 14
 
-      - name: Instal NPM dependencies
+      - name: Install NPM dependencies
         run: npm install
 
       - name: Run Linters
