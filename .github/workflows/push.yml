@@ -25,6 +25,7 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
+          prettier: true
 
       - name: Run Unit Testing
         run: npm test
